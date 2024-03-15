@@ -1,20 +1,179 @@
+@font-face {
+    font-family: roman;
+    src: url(https://fontlibrary.org//face/code-new-roman)
+}
+
+html, body {
+    max-width: 100%;
+    height: 100%;
+    padding: 0; 
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+input:valid {
+    border-radius: 3px;
+    border: 1px solid silver;
+}
+
+input:invalid {
+    border-radius: 3px;
+    border: 1px dashed red;
+}
+
+input:required {
+    border-radius: 3px;
+    border: 1px solid red;
+}
 
 aside {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
     position: relative;
     top: 0px;
     left: 0px;
 }
 
+aside footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+}
+
+aside footer a {
+    color: white;
+}
+
+.logo {
+    background-color: black;
+    position: absolute;
+    left: 0%;
+    bottom: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .5;
+}
+
+.odin-text {
+    color: white;
+    font-size: 20px;
+}
+
 .image1 {
-    width: 320px;
-    max-width: 100%;
+    width: 100%;
+    min-height: 100%;
     position: relative;
     top: 0px;
     left: 0px;
 }
 
 .image2 {
-    position: absolute;
-    border: 2px solid blue;
-    left: 30px;
+    /* position: absolute;
+    left: 35%;
+    bottom: 50%; */
+    width: 100px;
+}
+
+.flex-container {
+    overflow: auto;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.main-heading {
+    background-color: #f8f8ff ;
+}
+
+.main-heading {
+    font-family: roman;
+    font-size: 20px;
+    font-weight: 550;
+    height: 35%;
+    overflow: hidden;
+}
+
+form {
+    margin-left: 2rem;
+    padding-left: 1rem;
+}
+
+.nested-heading-div {
+    width: 57%;
+    padding-left: 1rem;
+    margin-left: 2rem;
+    margin-top: 6rem;
+}
+
+main div div div {
+    margin-top: 2rem;
+}
+
+span {
+    font-style: italic;
+}
+
+form fieldset {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+label {
+    width: 13rem;
+    box-sizing: border-box;
+}
+
+.labels {
+    display: flex;
+    gap: 10rem;
+}
+
+input {
+    width: 13rem;
+    height: 1.5rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.inputs {
+    display: flex;
+    gap: 10rem;  
+    height: 1.6rem;
+}
+
+button {
+    background-color: #596D48;
+    width: 11rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: none;
+}
+
+main .account-login {
+    width: 57%;
+    padding-left: 1rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+main .account-login a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+.match-mismatch {
+    margin-bottom: 1rem;
 }

@@ -7,41 +7,65 @@
     <title>Sign Up Form</title>
 </head>
 <body>
-    <aside>
-        <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="Leaves" class="image1" />
-        <img src="images/logo.png" alt="The Odin Project Logo" class="image2" />
-        <footer>
-            Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-        </footer>
-    </aside>
-    <main>
-        <div>This is not a real online service! You know you need something like this in your life 
-            to help you realize your deepest dreams. Sign up now to get started.<br/>
-            You know you want to.
-        </div>
-        <h1>Let's do this!</h1>
-        <form>
-            <fieldset>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name" />
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name" />
-            </fieldset>
-            <fieldset>
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email" />
-                <label for="number">PHONE NUMBER</label>
-                <input type="number" id="number" name="number" />
-            </fieldset>
-            <fieldset>
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" class="password" />
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm-password" class="confirm-password"/>
-            </fieldset>
-            <button type="submit">Create Account</button>
-        </form>
-        <div>Already have an account?<a href="#">Login</a></div>
-    </main>
+    <div class="flex-container">
+        <aside class="sidebar-container">
+            <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="Leaves" class="image1" />
+            <div class="logo">
+                <img src="images/logo.png" alt="The Odin Project Logo" class="image2" />
+                <div class="odin-text">ODIN</div>
+            </div>
+            <footer>
+                Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </footer>
+        </aside>
+        <main>
+            <div class="main-heading">
+                <div class="nested-heading-div">
+                    This is not a real online service! You know you need something like this in your life
+                    to help you realize your deepest dreams. Sign up <span>now</span> to get started.
+                    <div>You <span>know</span> you want to.</div>
+                </div>
+            </div>
+            <div class="simple-form">
+                <form>
+                    <h2>Let's do this!</h2>
+                    <fieldset>
+                        <div class="labels">
+                            <label for="first-name">FIRST NAME</label>
+                            <label for="last-name">LAST NAME</label> <br/>
+                        </div>
+                        <div class="inputs">
+                            <input type="text" id="first-name" name="first-name" required/>
+                            <input type="text" id="last-name" name="last-name" required/>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="labels">
+                            <label for="email">EMAIL</label>
+                            <label for="number">PHONE NUMBER</label> <br/>
+                        </div>
+                        <div class="inputs">
+                            <input type="email" id="email" name="email" required/>
+                            <input type="tel" id="number" name="number" maxlength="10" pattern="^9[0-9]{9}"/>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="labels">
+                            <label for="password">PASSWORD</label>
+                            <label for="confirm-password">CONFIRM PASSWORD</label> <br/>
+                        </div>
+                        <div class="inputs">
+                            <input type="password" id="password" class="password" required/>
+                            <input type="password" id="confirm-password" class="confirm-password" required/>
+                        </div> 
+                        <div class="match-mismatch"></div>
+                    </fieldset>
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+            <div class="account-login">Already have an account?<a href="#"> Log in </a></div>
+        </main>
+    </div>
+    <script type="text/javascript" src="validity.js"></script>
 </body>
 </html>
